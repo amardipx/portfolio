@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 text-center">
+    <section className="min-h-screen pt-20 bg-black text-white flex flex-col items-center justify-center px-6 text-center">
       <h1 className="text-5xl md:text-7xl font-bold tracking-wide">
         Amardip Karn
       </h1>
