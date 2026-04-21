@@ -6,7 +6,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # later replace with your Vercel URL
+    allow_origins=[
+    "http://localhost:3000",
+    "https://portfolio-nine-gray-30.vercel.app",
+],  # later replace with your Vercel URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

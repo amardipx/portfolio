@@ -7,7 +7,7 @@ export default function Leetcode() {
   const [updated, setUpdated] = useState("");
 
   useEffect(() => {
-    fetch("https://portfolio-backend-f2m7.onrender.comhttp://127.0.0.1:8000/api/leetcode")
+    fetch("https://portfolio-backend-f2m7.onrender.com/api/leetcode")
       .then((res) => res.json())
       .then((json) => {
         setData(json);
