@@ -1,7 +1,10 @@
+import { ExternalLink } from "lucide-react";
+
 export default function Projects() {
   const projects = [
     {
       title: "CodeCollab",
+      url: "https://github.com/amardipx/codecollab",
       desc: "Full-stack collaboration platform with task sharing, secure authentication, and real-time workflows. Built modular REST APIs and optimized database performance.",
       tech: "Node.js • Express • PostgreSQL • JWT • Docker",
       highlights: [
@@ -12,6 +15,7 @@ export default function Projects() {
     },
     {
       title: "Lords Win Predictor",
+      url: "https://github.com/amardipx/lords-win-predictor",
       desc: "Machine learning-powered match outcome prediction platform. Predicts win / draw / loss outcomes through a production-ready API service.",
       tech: "FastAPI • Python • scikit-learn • PostgreSQL • React • Docker",
       highlights: [
@@ -22,6 +26,7 @@ export default function Projects() {
     },
     {
       title: "SimpleBank",
+      url: "https://github.com/amardipx/simplebank",
       desc: "Production-grade banking backend focused on secure transactions, account management, and robust API architecture.",
       tech: "Go • Gin • PostgreSQL • SQLC • JWT • bcrypt",
       highlights: [
@@ -50,8 +55,17 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-gray-800 rounded-2xl p-8 bg-zinc-950 hover:border-gray-600 transition"
+              className="relative border border-gray-800 rounded-2xl p-8 bg-zinc-950 hover:border-gray-600 transition"
             >
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-5 right-5 text-gray-500 hover:text-white transition"
+              >
+                <ExternalLink size={20} />
+              </a>
+
               <h3 className="text-2xl font-semibold">
                 {project.title}
               </h3>
